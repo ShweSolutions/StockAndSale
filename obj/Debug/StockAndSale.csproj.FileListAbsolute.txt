@@ -1,0 +1,129 @@
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\ResolveAssemblyReference.cache
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Properties.Resources.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmCustomer.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.csproj.GenerateResource.Cache
+D:\project\Window\StockAndSale\StockAndSale\bin\Debug\StockAndSale.exe.config
+D:\project\Window\StockAndSale\StockAndSale\bin\Debug\StockAndSale.exe
+D:\project\Window\StockAndSale\StockAndSale\bin\Debug\StockAndSale.pdb
+D:\project\Window\StockAndSale\StockAndSale\bin\Debug\ComponentFactory.Krypton.Navigator.DLL
+D:\project\Window\StockAndSale\StockAndSale\bin\Debug\ComponentFactory.Krypton.Toolkit.DLL
+D:\project\Window\StockAndSale\StockAndSale\bin\Debug\MTGCCombobox.dll
+D:\project\Window\StockAndSale\StockAndSale\bin\Debug\MTGCCombobox.xml
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.exe
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.pdb
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmCatagory.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmProduct.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmMain.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.CtrlProductInStore.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.CtrlSale.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.CtrlStockIn.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmProductArrival.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmCashInvoice.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmInvoiceTypeSelect.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmConsignmentInvoice.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmCreditInvoice.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmConsignmentReturn.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_CashInvoiceReport.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\RdlCompile.cache
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\RdlCompile.compiled
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_PaymentDate.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_CreditInvoiceReport.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_ConsignInvoiceReport.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmUserManagement.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmLogin.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmBackupDatabase.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.frmSerial.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_InvoiceSaleReport.resources
+D:\project\Window\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_ProductInvoiceReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\bin\Debug\StockAndSale.exe.config
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.exe
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.pdb
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\bin\Debug\StockAndSale.exe
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\bin\Debug\StockAndSale.pdb
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\bin\Debug\ComponentFactory.Krypton.Navigator.DLL
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\bin\Debug\ComponentFactory.Krypton.Toolkit.DLL
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\bin\Debug\MTGCCombobox.dll
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\bin\Debug\MTGCCombobox.xml
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\ResolveAssemblyReference.cache
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Properties.Resources.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.CtrlProductInStore.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.CtrlSale.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.CtrlStockIn.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmBackupDatabase.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmCashInvoice.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmCatagory.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmConsignmentInvoice.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmConsignmentReturn.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmCreditInvoice.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmCustomer.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmInvoiceTypeSelect.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmLogin.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmMain.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmProduct.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmProductArrival.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.frmSerial.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.FrmUserManagement.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_PaymentDate.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_CashInvoiceReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_ConsignInvoiceReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_CreditInvoiceReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_InvoiceSaleReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_ProductInvoiceReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.csproj.GenerateResource.Cache
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\RdlCompile.cache
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\RdlCompile.compiled
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_CustomerReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_ProductInStoreReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_CustomerSaleReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_FOCReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_ProductSaleSummaryReport.resources
+E:\Stock And Sale Backup\latest backup (28.10.2013)\StockAndSale\StockAndSale\obj\Debug\StockAndSale.Frm_PromotionReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\bin\Debug\StockAndSale.exe.config
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.exe
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.pdb
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\bin\Debug\StockAndSale.exe
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\bin\Debug\StockAndSale.pdb
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\bin\Debug\ComponentFactory.Krypton.Navigator.DLL
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\bin\Debug\ComponentFactory.Krypton.Toolkit.DLL
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\bin\Debug\MTGCCombobox.dll
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\bin\Debug\MTGCCombobox.xml
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\ResolveAssemblyReference.cache
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Properties.Resources.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.CtrlProductInStore.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.CtrlSale.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.CtrlStockIn.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmBackupDatabase.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmCashInvoice.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmCatagory.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmConsignmentInvoice.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmConsignmentReturn.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmCreditInvoice.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmCustomer.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmInvoiceTypeSelect.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmLogin.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmMain.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmProduct.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmProductArrival.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.frmSerial.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.FrmUserManagement.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_PaymentDate.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_CashInvoiceReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_ConsignInvoiceReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_CreditInvoiceReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_CustomerReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_CustomerSaleReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_FOCReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_InvoiceSaleReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_ProductInStoreReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_ProductInvoiceReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_ProductSaleSummaryReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_PromotionReport.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.csproj.GenerateResource.Cache
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\RdlCompile.cache
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\RdlCompile.compiled
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_CustomerCategory.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_CustomerReturn.resources
+D:\Zar Ni Minn Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.Frm_CustomerReturnReport.resources
+D:\Zar_Ni_Minn_Data\Shwe Solutions\logicforce_01\StockAndSale\bin\Debug\StockAndSale.exe.config
+D:\Zar_Ni_Minn_Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.exe
+D:\Zar_Ni_Minn_Data\Shwe Solutions\logicforce_01\StockAndSale\obj\Debug\StockAndSale.pdb

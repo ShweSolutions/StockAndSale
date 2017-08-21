@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65E1CA77-4600-4015-8EFC-666CF590AF35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockAndSale</RootNamespace>
+    <AssemblyName>StockAndSale</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Navigator, Version=2.5.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.5.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="MTGCCombobox, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BLLCatagory.cs" />
+    <Compile Include="BLL\BLLCustomer.cs" />
+    <Compile Include="BLL\BLLCustomerCategory.cs" />
+    <Compile Include="BLL\BLLCustomerReturn.cs" />
+    <Compile Include="BLL\BLLDataBackUp.cs" />
+    <Compile Include="BLL\BLLInvoice.cs" />
+    <Compile Include="BLL\BLLInvoiceDetail.cs" />
+    <Compile Include="BLL\BLLInvoiceNo.cs" />
+    <Compile Include="BLL\BLLInvoiceReturnDetail.cs" />
+    <Compile Include="BLL\BLLInvoiceType.cs" />
+    <Compile Include="BLL\BLLPermission.cs" />
+    <Compile Include="BLL\BLLProduct.cs" />
+    <Compile Include="BLL\BLLProductInStore.cs" />
+    <Compile Include="BLL\BLLStockIn.cs" />
+    <Compile Include="BLL\BLLUser.cs" />
+    <Compile Include="DAL\DALCatagory.cs" />
+    <Compile Include="DAL\DALCustomer.cs" />
+    <Compile Include="DAL\DALCustomerCategory.cs" />
+    <Compile Include="DAL\DALCustomerReturn.cs" />
+    <Compile Include="DAL\DALDataBackUp.cs" />
+    <Compile Include="DAL\DALInvoice.cs" />
+    <Compile Include="DAL\DALInvoiceDetail.cs" />
+    <Compile Include="DAL\DALInvoiceNo.cs" />
+    <Compile Include="DAL\DALInvoiceReturnDetail.cs" />
+    <Compile Include="DAL\DALInvoiceType.cs" />
+    <Compile Include="DAL\DALPermission.cs" />
+    <Compile Include="DAL\DALProduct.cs" />
+    <Compile Include="DAL\DALProductInStore.cs" />
+    <Compile Include="DAL\DALStockIn.cs" />
+    <Compile Include="DAL\DALUser.cs" />
+    <Compile Include="DAL\DALUserPermission.cs" />
+    <Compile Include="DAL\SqlConjunction.cs" />
+    <Compile Include="DAL\SqlHelper.cs" />
+    <Compile Include="DE\DECatagory.cs" />
+    <Compile Include="DE\DECustomer.cs" />
+    <Compile Include="DE\DECustomerCategory.cs" />
+    <Compile Include="DE\DECustomerReturn.cs" />
+    <Compile Include="DE\DEDataBackUp.cs" />
+    <Compile Include="DE\DEGlobal.cs" />
+    <Compile Include="DE\DEInvoice.cs" />
+    <Compile Include="DE\DEInvoiceDetail.cs" />
+    <Compile Include="DE\DEInvoiceNo.cs" />
+    <Compile Include="DE\DEInvoiceReturnDetail.cs" />
+    <Compile Include="DE\DEInvoiceType.cs" />
+    <Compile Include="DE\DEPermission.cs" />
+    <Compile Include="DE\DEProduct.cs" />
+    <Compile Include="DE\DEProductInStore.cs" />
+    <Compile Include="DE\DEStockIn.cs" />
+    <Compile Include="DE\DEUser.cs" />
+    <Compile Include="DE\DEUserPermission.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\Controls\CtrlProductInStore.resx">
+      <DependentUpon>CtrlProductInStore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\Controls\CtrlSale.resx">
+      <DependentUpon>CtrlSale.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\Controls\CtrlStockIn.resx">
+      <DependentUpon>CtrlStockIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmBackupDatabase.resx">
+      <DependentUpon>FrmBackupDatabase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmCashInvoice.resx">
+      <DependentUpon>FrmCashInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmCatagory.resx">
+      <DependentUpon>FrmCatagory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmConsignmentInvoice.resx">
+      <DependentUpon>FrmConsignmentInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmConsignmentReturn.resx">
+      <DependentUpon>FrmConsignmentReturn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmCreditInvoice.resx">
+      <DependentUpon>FrmCreditInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmCustomer.resx">
+      <DependentUpon>FrmCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmInvoiceTypeSelect.resx">
+      <DependentUpon>FrmInvoiceTypeSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmProduct.resx">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmProductArrival.resx">
+      <DependentUpon>FrmProductArrival.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\frmSerial.resx">
+      <DependentUpon>frmSerial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\FrmUserManagement.resx">
+      <DependentUpon>FrmUserManagement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\Frm_CustomerCategory.resx">
+      <DependentUpon>Frm_CustomerCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\Frm_CustomerReturn.resx">
+      <DependentUpon>Frm_CustomerReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Forms\Frm_PaymentDate.resx">
+      <DependentUpon>Frm_PaymentDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CashInvoiceA5Report.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CashInvoiceReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CashInvoiceSmallReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_ConsignInvoiceA5Report.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_ConsignInvoiceReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_ConsignInvoiceSmallReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CreditInvoiceA5Report.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CreditInvoiceReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CreditInvoiceSmallReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CustomerReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CustomerReturnRpt.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CustomerReturnWithoutInvoiceNoRepot.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CustomerSaleRpt.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_FOCReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_InvoiceSaleReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_ProductInvoiceReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_ProductReturnSummaryReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_ProductSaleSummaryReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_PromotionReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_CashInvoiceReport.resx">
+      <DependentUpon>Frm_CashInvoiceReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_ConsignInvoiceReport.resx">
+      <DependentUpon>Frm_ConsignInvoiceReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_CreditInvoiceReport.resx">
+      <DependentUpon>Frm_CreditInvoiceReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_CustomerReport.resx">
+      <DependentUpon>Frm_CustomerReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_CustomerReturnReport.resx">
+      <DependentUpon>Frm_CustomerReturnReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_CustomerSaleReport.resx">
+      <DependentUpon>Frm_CustomerSaleReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_FOCReport.resx">
+      <DependentUpon>Frm_FOCReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_InvoiceSaleReport.resx">
+      <DependentUpon>Frm_InvoiceSaleReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_ProductInStoreReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_ProductInStoreReport.resx">
+      <DependentUpon>Frm_ProductInStoreReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_ProductInvoiceReport.resx">
+      <DependentUpon>Frm_ProductInvoiceReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_ProductSaleSummaryReport.resx">
+      <DependentUpon>Frm_ProductSaleSummaryReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinUI\Reports\ReportForms\Frm_PromotionReport.resx">
+      <DependentUpon>Frm_PromotionReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WinUI\Classes\UIConstant.cs" />
+    <Compile Include="WinUI\Classes\UIControl.cs" />
+    <Compile Include="WinUI\Classes\UIGlobal.cs" />
+    <Compile Include="WinUI\DataSets\DS_CustomerSaleReturnRpt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CustomerSaleReturnRpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\DataSets\DS_GeneralReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GeneralReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\DataSets\DS_InvoiceReport.cs">
+      <DependentUpon>DS_InvoiceReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinUI\DataSets\DS_InvoiceReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_InvoiceReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\DataSets\DS_SaleReturnSummaryReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SaleReturnSummaryReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\Controls\CtrlProductInStore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\Controls\CtrlProductInStore.Designer.cs">
+      <DependentUpon>CtrlProductInStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\Controls\CtrlSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\Controls\CtrlSale.Designer.cs">
+      <DependentUpon>CtrlSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\Controls\CtrlStockIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\Controls\CtrlStockIn.Designer.cs">
+      <DependentUpon>CtrlStockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmBackupDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmBackupDatabase.Designer.cs">
+      <DependentUpon>FrmBackupDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmCashInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmCashInvoice.Designer.cs">
+      <DependentUpon>FrmCashInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmCatagory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmCatagory.Designer.cs">
+      <DependentUpon>FrmCatagory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmConsignmentInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmConsignmentInvoice.Designer.cs">
+      <DependentUpon>FrmConsignmentInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmConsignmentReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmConsignmentReturn.Designer.cs">
+      <DependentUpon>FrmConsignmentReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmCreditInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmCreditInvoice.Designer.cs">
+      <DependentUpon>FrmCreditInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmCustomer.Designer.cs">
+      <DependentUpon>FrmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmInvoiceTypeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmInvoiceTypeSelect.Designer.cs">
+      <DependentUpon>FrmInvoiceTypeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmProduct.Designer.cs">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmProductArrival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmProductArrival.Designer.cs">
+      <DependentUpon>FrmProductArrival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\frmSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\frmSerial.designer.cs">
+      <DependentUpon>frmSerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmUserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\FrmUserManagement.Designer.cs">
+      <DependentUpon>FrmUserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\Frm_CustomerCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\Frm_CustomerCategory.Designer.cs">
+      <DependentUpon>Frm_CustomerCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\Frm_CustomerReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\Frm_CustomerReturn.Designer.cs">
+      <DependentUpon>Frm_CustomerReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Forms\Frm_PaymentDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Forms\Frm_PaymentDate.Designer.cs">
+      <DependentUpon>Frm_PaymentDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_CashInvoiceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_CashInvoiceReport.Designer.cs">
+      <DependentUpon>Frm_CashInvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_ConsignInvoiceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_ConsignInvoiceReport.Designer.cs">
+      <DependentUpon>Frm_ConsignInvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_CreditInvoiceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_CreditInvoiceReport.Designer.cs">
+      <DependentUpon>Frm_CreditInvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_CustomerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_CustomerReport.Designer.cs">
+      <DependentUpon>Frm_CustomerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_CustomerReturnReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_CustomerReturnReport.Designer.cs">
+      <DependentUpon>Frm_CustomerReturnReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_CustomerSaleReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_CustomerSaleReport.Designer.cs">
+      <DependentUpon>Frm_CustomerSaleReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_FOCReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_FOCReport.Designer.cs">
+      <DependentUpon>Frm_FOCReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_InvoiceSaleReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_InvoiceSaleReport.Designer.cs">
+      <DependentUpon>Frm_InvoiceSaleReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_ProductInStoreReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_ProductInStoreReport.Designer.cs">
+      <DependentUpon>Frm_ProductInStoreReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_ProductInvoiceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_ProductInvoiceReport.Designer.cs">
+      <DependentUpon>Frm_ProductInvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_ProductSaleSummaryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_ProductSaleSummaryReport.Designer.cs">
+      <DependentUpon>Frm_ProductSaleSummaryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_PromotionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinUI\Reports\ReportForms\Frm_PromotionReport.Designer.cs">
+      <DependentUpon>Frm_PromotionReport.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Components\ComponentFactory.Krypton.Navigator.DLL" />
+    <Content Include="Components\ComponentFactory.Krypton.Toolkit.DLL" />
+    <Content Include="Components\MTGCCombobox.dll" />
+    <Content Include="Components\MTGCCombobox.xml" />
+    <None Include="Resources\chanmyanmar.jpg" />
+    <Content Include="Resources\chanMyanmarFooter.jpg" />
+    <Content Include="Resources\chanMyanmarHeader.jpg" />
+    <None Include="Resources\chanmyanmarlogo.jpg" />
+    <Content Include="Resources\pda_write.ico" />
+    <None Include="Resources\test.jpg" />
+    <None Include="Resources\coins.ico" />
+    <None Include="Resources\DCHF32.png" />
+    <None Include="Resources\finance.png" />
+    <None Include="Resources\booking.png" />
+    <None Include="Resources\RTUV32.png" />
+    <None Include="Resources\Import321.png" />
+    <None Include="Resources\StockIn.png" />
+    <None Include="WinUI\DataSets\DS_CustomerSaleReturnRpt.xsc">
+      <DependentUpon>DS_CustomerSaleReturnRpt.xsd</DependentUpon>
+    </None>
+    <None Include="WinUI\DataSets\DS_CustomerSaleReturnRpt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CustomerSaleReturnRpt.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WinUI\DataSets\DS_CustomerSaleReturnRpt.xss">
+      <DependentUpon>DS_CustomerSaleReturnRpt.xsd</DependentUpon>
+    </None>
+    <None Include="WinUI\DataSets\DS_GeneralReport.xsc">
+      <DependentUpon>DS_GeneralReport.xsd</DependentUpon>
+    </None>
+    <None Include="WinUI\DataSets\DS_GeneralReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_GeneralReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WinUI\DataSets\DS_GeneralReport.xss">
+      <DependentUpon>DS_GeneralReport.xsd</DependentUpon>
+    </None>
+    <None Include="WinUI\DataSets\DS_InvoiceReport.xsc">
+      <DependentUpon>DS_InvoiceReport.xsd</DependentUpon>
+    </None>
+    <None Include="WinUI\DataSets\DS_InvoiceReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_InvoiceReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WinUI\DataSets\DS_InvoiceReport.xss">
+      <DependentUpon>DS_InvoiceReport.xsd</DependentUpon>
+    </None>
+    <None Include="WinUI\DataSets\DS_SaleReturnSummaryReport.xsc">
+      <DependentUpon>DS_SaleReturnSummaryReport.xsd</DependentUpon>
+    </None>
+    <None Include="WinUI\DataSets\DS_SaleReturnSummaryReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SaleReturnSummaryReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WinUI\DataSets\DS_SaleReturnSummaryReport.xss">
+      <DependentUpon>DS_SaleReturnSummaryReport.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
