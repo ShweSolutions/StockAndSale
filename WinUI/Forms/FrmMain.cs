@@ -225,7 +225,15 @@ namespace StockAndSale
         {
             Frm_CustomerCategory frm_Catagory = new Frm_CustomerCategory();
             frm_Catagory.ShowDialog();
-        }     
+        }
+
+        private void invoicePaidReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_InvoicePaidReport frm_InvoicePaidReport = new Frm_InvoicePaidReport();
+            frm_InvoicePaidReport.ShowDialog();
+        }
+
+          
         
     }
 }

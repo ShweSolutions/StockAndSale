@@ -35,11 +35,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.setupDataToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.productToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.customerToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.catagoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.invoiceSaleReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invoicePaidReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productSaleReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productSaleSummaryReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerSaleReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,7 +61,6 @@
             this.customerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.productCatagoryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.customerCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Product_In_Store)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_StockIn)).BeginInit();
@@ -83,7 +84,7 @@
             // btn_Product_In_Store
             // 
             this.btn_Product_In_Store.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Product_In_Store.DirtyPaletteCounter = 834;
+            this.btn_Product_In_Store.DirtyPaletteCounter = 838;
             this.btn_Product_In_Store.Location = new System.Drawing.Point(384, 51);
             this.btn_Product_In_Store.Margin = new System.Windows.Forms.Padding(3, 11, 3, 11);
             this.btn_Product_In_Store.Name = "btn_Product_In_Store";
@@ -122,7 +123,7 @@
             // btn_StockIn
             // 
             this.btn_StockIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_StockIn.DirtyPaletteCounter = 834;
+            this.btn_StockIn.DirtyPaletteCounter = 838;
             this.btn_StockIn.Location = new System.Drawing.Point(199, 51);
             this.btn_StockIn.Margin = new System.Windows.Forms.Padding(3, 11, 3, 11);
             this.btn_StockIn.Name = "btn_StockIn";
@@ -161,7 +162,7 @@
             // btn_Sale
             // 
             this.btn_Sale.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Sale.DirtyPaletteCounter = 835;
+            this.btn_Sale.DirtyPaletteCounter = 839;
             this.btn_Sale.Location = new System.Drawing.Point(12, 51);
             this.btn_Sale.Margin = new System.Windows.Forms.Padding(3, 11, 3, 11);
             this.btn_Sale.Name = "btn_Sale";
@@ -232,6 +233,14 @@
             this.productToolStripMenuItem2.Text = "Product";
             this.productToolStripMenuItem2.Click += new System.EventHandler(this.productToolStripMenuItem2_Click);
             // 
+            // catagoryToolStripMenuItem
+            // 
+            this.catagoryToolStripMenuItem.Enabled = false;
+            this.catagoryToolStripMenuItem.Name = "catagoryToolStripMenuItem";
+            this.catagoryToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.catagoryToolStripMenuItem.Text = "Product Category";
+            this.catagoryToolStripMenuItem.Click += new System.EventHandler(this.catagoryToolStripMenuItem_Click);
+            // 
             // customerToolStripMenuItem2
             // 
             this.customerToolStripMenuItem2.Enabled = false;
@@ -240,13 +249,12 @@
             this.customerToolStripMenuItem2.Text = "Customer";
             this.customerToolStripMenuItem2.Click += new System.EventHandler(this.customerToolStripMenuItem2_Click);
             // 
-            // catagoryToolStripMenuItem
+            // customerCategoryToolStripMenuItem
             // 
-            this.catagoryToolStripMenuItem.Enabled = false;
-            this.catagoryToolStripMenuItem.Name = "catagoryToolStripMenuItem";
-            this.catagoryToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.catagoryToolStripMenuItem.Text = "Product Category";
-            this.catagoryToolStripMenuItem.Click += new System.EventHandler(this.catagoryToolStripMenuItem_Click);
+            this.customerCategoryToolStripMenuItem.Name = "customerCategoryToolStripMenuItem";
+            this.customerCategoryToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.customerCategoryToolStripMenuItem.Text = "Customer Category";
+            this.customerCategoryToolStripMenuItem.Click += new System.EventHandler(this.customerCategoryToolStripMenuItem_Click);
             // 
             // userToolStripMenuItem2
             // 
@@ -260,6 +268,7 @@
             // 
             this.reportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.invoiceSaleReportToolStripMenuItem,
+            this.invoicePaidReportToolStripMenuItem,
             this.productSaleReportToolStripMenuItem,
             this.productSaleSummaryReportToolStripMenuItem,
             this.customerSaleReportToolStripMenuItem,
@@ -275,6 +284,13 @@
             this.invoiceSaleReportToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
             this.invoiceSaleReportToolStripMenuItem.Text = "Invoice Sale Report";
             this.invoiceSaleReportToolStripMenuItem.Click += new System.EventHandler(this.invoiceSaleReportToolStripMenuItem_Click);
+            // 
+            // invoicePaidReportToolStripMenuItem
+            // 
+            this.invoicePaidReportToolStripMenuItem.Name = "invoicePaidReportToolStripMenuItem";
+            this.invoicePaidReportToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
+            this.invoicePaidReportToolStripMenuItem.Text = "Invoice Paid Report";
+            this.invoicePaidReportToolStripMenuItem.Click += new System.EventHandler(this.invoicePaidReportToolStripMenuItem_Click);
             // 
             // productSaleReportToolStripMenuItem
             // 
@@ -410,13 +426,6 @@
             this.userToolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
             this.userToolStripMenuItem1.Text = "User";
             // 
-            // customerCategoryToolStripMenuItem
-            // 
-            this.customerCategoryToolStripMenuItem.Name = "customerCategoryToolStripMenuItem";
-            this.customerCategoryToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.customerCategoryToolStripMenuItem.Text = "Customer Category";
-            this.customerCategoryToolStripMenuItem.Click += new System.EventHandler(this.customerCategoryToolStripMenuItem_Click);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -477,5 +486,6 @@
         private System.Windows.Forms.ToolStripMenuItem productSaleSummaryReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem promotionReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customerCategoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem invoicePaidReportToolStripMenuItem;
     }
 }

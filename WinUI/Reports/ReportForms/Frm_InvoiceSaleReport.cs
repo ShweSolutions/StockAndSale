@@ -143,7 +143,7 @@ namespace StockAndSale
 
             DataTable dt_InvoiceList = new DataTable();
 
-            ////////////////////////////// By Customer ///////////////
+            ////////////////////////////// By Customer
             if (rdo_Customer.Checked)
             {
                 if (rdo_All.Checked == true)

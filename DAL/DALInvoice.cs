@@ -223,7 +223,37 @@ namespace StockAndSale
             return dt_Invoice;
         }
 
+        public DataTable LoadPaidInvoiceTableForAllDataByFilter(DateTime dateTime_From, DateTime dateTime_To, int int_Customer_Id, String str_InvoiceNo, int int_InvoiceType_Id, DateTime dateTime_DueDate, String user, String str_PONo)
+        {
+            DataTable dt_Invoice;
+
+            SqlCommand sqlCmd = new SqlCommand();
+
+            sqlCmd.CommandText = "SELECT 0 as 'No',inv.Invoice_Id,inv.Invoice_No,Convert(nvarchar,inv.Invoice_Date,103) as 'Invoice_Date',Convert(nvarchar,inv.Invoice_Due_Date,103) as 'Invoice_Due_Date',inv.Customer_Name,inv.Customer_Id,cus.Customer_Description,cus.Address,cus.Phone,inv.Total,inv.Advance,inv.CommercialTax,inv.Discount,inv.DeliveryDiscount,inv.GrandTotal,Sum(invRD.Amount) as 'ReturnAmount',(inv.GrandTotal - Sum(invRD.Amount)) as 'Difference' ,inv.InvoiceType_Id,invType.InvoiceType_Description,inv.isPaid,CASE WHEN inv.isPaid = 'True' then Convert(nvarchar,inv.PayDate,103) ELSE '' END as 'PayDate',inv.isReturn,inv.Remark,inv.Active,U.Name as 'ModifiedBy',inv.ModifiedDate,inv.IsPromotion FROM tbl_Invoice inv LEFT JOIN tbl_Customer cus ON inv.Customer_Id = cus.Customer_Id LEFT JOIN tbl_InvoiceType invType ON inv.InvoiceType_Id = invType.InvoiceType_Id LEFT JOIN tbl_User U ON inv.ModifiedBy = U.LoginName LEFT JOIN tbl_InvoiceReturnDetail invRD ON inv.Invoice_Id = invRD.Invoice_Id where (inv.ModifiedBy ='" + user + "' OR '" + user + "'='' ) And  (cus.Customer_Id ='" + int_Customer_Id + "' OR '" + int_Customer_Id + "'='0' ) And (inv.Invoice_No  LIKE '%" + str_InvoiceNo + "%' OR  '" + str_InvoiceNo + "'='') And (inv.PONumber  LIKE '%" + str_PONo + "%' OR  '" + str_PONo + "'='')  And (inv.Invoice_Date <='" + dateTime_To + "' And inv.Invoice_Date >= '" + dateTime_From + "') And (invType.InvoiceType_Id ='" + int_InvoiceType_Id + "') And (inv.Invoice_Due_Date ='" + dateTime_DueDate + "' OR '" + dateTime_DueDate + "'='1/1/1900 12:00:00 AM' ) And (inv.Active = 'true') group by inv.Invoice_Id,inv.Invoice_No,inv.Invoice_Date,inv.Invoice_Due_Date,inv.Customer_Name,inv.Customer_Id,cus.Customer_Description,cus.Address,cus.Phone,inv.Total,inv.Advance,inv.Discount,inv.GrandTotal,inv.InvoiceType_Id,invType.InvoiceType_Description,inv.isPaid,inv.PayDate,inv.isReturn,inv.Remark,inv.Active,U.Name,inv.ModifiedDate,inv.IsPromotion,inv.CommercialTax,inv.DeliveryDiscount order by inv.isPaid desc,inv.Invoice_Date";   //And (inv.Customer_Id <> '0')";
+
+            dt_Invoice = SqlConjunction.GetSQLDataTable(sqlCmd);
+
+            sqlCmd = null;
+
+            return dt_Invoice;
+        }
+
         public DataTable LoadInvoiceTableForAllDataByFilterByCustomerGroup(DateTime dateTime_From, DateTime dateTime_To, int int_CustomerGroupId, String str_InvoiceNo, int int_InvoiceType_Id, DateTime dateTime_DueDate, String user, String str_PONo)
+        {
+            DataTable dt_Invoice;
+
+            SqlCommand sqlCmd = new SqlCommand();
+
+            sqlCmd.CommandText = "SELECT 0 as 'No',inv.Invoice_Id,inv.Invoice_No,Convert(nvarchar,inv.Invoice_Date,103) as 'Invoice_Date',Convert(nvarchar,inv.Invoice_Due_Date,103) as 'Invoice_Due_Date',inv.Customer_Name,inv.Customer_Id,cus.Customer_Description,cus.Address,cus.Phone,inv.Total,inv.Advance,inv.CommercialTax,inv.Discount,inv.DeliveryDiscount,inv.GrandTotal,Sum(invRD.Amount) as 'ReturnAmount',(inv.GrandTotal - Sum(invRD.Amount)) as 'Difference' ,inv.InvoiceType_Id,invType.InvoiceType_Description,inv.isPaid,CASE WHEN inv.isPaid = 'True' then Convert(nvarchar,inv.PayDate,103) ELSE '' END as 'PayDate',inv.isReturn,inv.Remark,inv.Active,U.Name as 'ModifiedBy',inv.ModifiedDate,inv.IsPromotion FROM tbl_Invoice inv LEFT JOIN tbl_Customer cus ON inv.Customer_Id = cus.Customer_Id LEFT JOIN tbl_InvoiceType invType ON inv.InvoiceType_Id = invType.InvoiceType_Id LEFT JOIN tbl_User U ON inv.ModifiedBy = U.LoginName LEFT JOIN tbl_InvoiceReturnDetail invRD ON inv.Invoice_Id = invRD.Invoice_Id where (inv.ModifiedBy ='" + user + "' OR '" + user + "'='' ) And  (cus.Catagory_Id ='" + int_CustomerGroupId + "' OR '" + int_CustomerGroupId + "'='0' ) And (inv.Invoice_No  LIKE '%" + str_InvoiceNo + "%' OR  '" + str_InvoiceNo + "'='') And (inv.PONumber  LIKE '%" + str_PONo + "%' OR  '" + str_PONo + "'='')  And (inv.Invoice_Date <='" + dateTime_To + "' And inv.Invoice_Date >= '" + dateTime_From + "') And (invType.InvoiceType_Id ='" + int_InvoiceType_Id + "') And (inv.Invoice_Due_Date ='" + dateTime_DueDate + "' OR '" + dateTime_DueDate + "'='1/1/1900 12:00:00 AM' ) And (inv.Active = 'true') group by inv.Invoice_Id,inv.Invoice_No,inv.Invoice_Date,inv.Invoice_Due_Date,inv.Customer_Name,inv.Customer_Id,cus.Customer_Description,cus.Address,cus.Phone,inv.Total,inv.Advance,inv.Discount,inv.GrandTotal,inv.InvoiceType_Id,invType.InvoiceType_Description,inv.isPaid,inv.PayDate,inv.isReturn,inv.Remark,inv.Active,U.Name,inv.ModifiedDate,inv.IsPromotion,inv.CommercialTax,inv.DeliveryDiscount order by inv.isPaid desc,inv.Invoice_Date";   //And (inv.Customer_Id <> '0')";
+
+            dt_Invoice = SqlConjunction.GetSQLDataTable(sqlCmd);
+
+            sqlCmd = null;
+
+            return dt_Invoice;
+        }
+
+        public DataTable LoadPaidInvoiceTableForAllDataByFilterByCustomerGroup(DateTime dateTime_From, DateTime dateTime_To, int int_CustomerGroupId, String str_InvoiceNo, int int_InvoiceType_Id, DateTime dateTime_DueDate, String user, String str_PONo)
         {
             DataTable dt_Invoice;
 

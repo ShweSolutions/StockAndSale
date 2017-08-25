@@ -140,7 +140,29 @@ namespace StockAndSale
             return dt_Invoice;
         }
 
+        public DataTable LoadPaidInvoiceTableForAllDataByFilter(DateTime dateTime_From, DateTime dateTime_To, int int_Customer_Id, String str_InvoiceNo, int int_InvoiceType_Id, DateTime dateTime_Due_Date, String user, String str_PONo)
+        {
+            DALInvoice obj_DALInvoice = new DALInvoice();
+
+            DataTable dt_Invoice = obj_DALInvoice.LoadPaidInvoiceTableForAllDataByFilter(dateTime_From, dateTime_To, int_Customer_Id, str_InvoiceNo, int_InvoiceType_Id, dateTime_Due_Date, user, str_PONo);
+
+            obj_DALInvoice = null;
+
+            return dt_Invoice;
+        }
+
         public DataTable LoadInvoiceTableForAllDataByFilterByCustomerGroup(DateTime dateTime_From, DateTime dateTime_To, int int_CustomerGroupId, String str_InvoiceNo, int int_InvoiceType_Id, DateTime dateTime_Due_Date, String user, String str_PONo)
+        {
+            DALInvoice obj_DALInvoice = new DALInvoice();
+
+            DataTable dt_Invoice = obj_DALInvoice.LoadInvoiceTableForAllDataByFilterByCustomerGroup(dateTime_From, dateTime_To, int_CustomerGroupId, str_InvoiceNo, int_InvoiceType_Id, dateTime_Due_Date, user, str_PONo);
+
+            obj_DALInvoice = null;
+
+            return dt_Invoice;
+        }
+
+        public DataTable LoadPaidInvoiceTableForAllDataByFilterByCustomerGroup(DateTime dateTime_From, DateTime dateTime_To, int int_CustomerGroupId, String str_InvoiceNo, int int_InvoiceType_Id, DateTime dateTime_Due_Date, String user, String str_PONo)
         {
             DALInvoice obj_DALInvoice = new DALInvoice();
 
