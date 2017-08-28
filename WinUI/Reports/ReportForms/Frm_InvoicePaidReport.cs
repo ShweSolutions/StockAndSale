@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Microsoft.Reporting.WinForms;
 
 namespace StockAndSale
 {
@@ -96,7 +97,7 @@ namespace StockAndSale
             DateTime dateTime_From = Convert.ToDateTime(dtp_PaidDateFrom.Value);
             DateTime dateTime_To = Convert.ToDateTime(dtp_PaidDateTo.Value.Date.AddHours(23.9));
 
-            DateTime dateTime_Due_Date = DEGlobal.dateTime_DefaultDate;
+            //DateTime dateTime_Due_Date = DEGlobal.dateTime_DefaultDate;
 
             DateTime dateTime_Current = DEGlobal.dateTime_ToDayDate;
 
@@ -160,7 +161,7 @@ namespace StockAndSale
                         int_InvoiceType_Id = 3;                        
                     }
 
-                    dt_InvoiceList = obj_BLLInvoice.LoadPaidInvoiceTableForAllDataByFilter(dateTime_From, dateTime_To, int_Customer_Id, str_InvoiceNo, int_InvoiceType_Id, dateTime_Due_Date, user, str_PONo);
+                    dt_InvoiceList = obj_BLLInvoice.LoadPaidInvoiceTableForAllDataByFilter(dateTime_From, dateTime_To, int_Customer_Id, str_InvoiceNo, int_InvoiceType_Id, user, str_PONo);
                     //////////////////////
                 
                 
@@ -186,7 +187,7 @@ namespace StockAndSale
                         int_InvoiceType_Id = 3;
                     }
 
-                    dt_InvoiceList = obj_BLLInvoice.LoadPaidInvoiceTableForAllDataByFilterByCustomerGroup(dateTime_From, dateTime_To, int_CustomerGroup_Id, str_InvoiceNo, int_InvoiceType_Id, dateTime_Due_Date, user, str_PONo);
+                    dt_InvoiceList = obj_BLLInvoice.LoadPaidInvoiceTableForAllDataByFilterByCustomerGroup(dateTime_From, dateTime_To, int_CustomerGroup_Id, str_InvoiceNo, int_InvoiceType_Id, user, str_PONo);
                     //////////////////////
                 
                 
@@ -198,7 +199,179 @@ namespace StockAndSale
 
         private void bindReport(DataTable dt_InvoiceSale)
         {
+            String user = string.Empty;
+            String customer = string.Empty;
 
+            String isCash = "false";
+            String isCredit = "false";
+            String isConsignment = "false";
+
+            try
+            {
+                user = Convert.ToString(cbx_Cashier.SelectedItem.Col2);
+            }
+            catch (Exception ex)
+            {
+                user = string.Empty;
+            }
+
+            try
+            {
+                customer = Convert.ToString(cbx_Customer.SelectedItem.Col1);
+            }
+            catch (Exception ex)
+            {
+                customer = string.Empty;
+            }
+
+            rptv_InvoicePaidReport.Clear();
+            rptv_InvoicePaidReport.Reset();
+
+            rptv_InvoicePaidReport.ProcessingMode = ProcessingMode.Local;
+
+            LocalReport localReport = rptv_InvoicePaidReport.LocalReport;
+
+            localReport.ReportEmbeddedResource = "StockAndSale.WinUI.Reports.Classes.Rpt_InvoicePaidReport.rdlc";
+
+            ReportDataSource ds_InvoiceSale = new ReportDataSource();
+            ds_InvoiceSale.Name = "DS_InvoiceReport_dt_Invoice";
+            ds_InvoiceSale.Value = dt_InvoiceSale;
+
+            ReportParameter parCashier = new ReportParameter();
+            parCashier.Name = "parCashier";
+
+            ReportParameter parIsCashier = new ReportParameter();
+            parIsCashier.Name = "parIsCashier";
+
+            ReportParameter parDateFrom = new ReportParameter();
+            parDateFrom.Name = "parDateFrom";
+
+            ReportParameter parDateTo = new ReportParameter();
+            parDateTo.Name = "parDateTo";
+
+            ReportParameter parIsCash = new ReportParameter();
+            parIsCash.Name = "parIsCash";
+
+            ReportParameter parIsCredit = new ReportParameter();
+            parIsCredit.Name = "parIsCredit";
+
+            ReportParameter parIsConsignment = new ReportParameter();
+            parIsConsignment.Name = "parIsConsignment";
+
+            ReportParameter parSaleReportType = new ReportParameter();
+            parSaleReportType.Name = "parSaleReportType";
+
+            ReportParameter parCustomer = new ReportParameter();
+            parCustomer.Name = "parCustomer";
+
+            ReportParameter parIsCustomer = new ReportParameter();
+            parIsCustomer.Name = "parIsCustomer";
+
+            if (rdo_Cash.Checked == true)
+            {
+                parSaleReportType.Values.Add("Cash Invoice (Paid) Report");
+            }
+            else if (rdo_Credit.Checked == true)
+            {
+                parSaleReportType.Values.Add("Credit Invoice (Paid) Report");
+            }
+            else
+            {
+                parSaleReportType.Values.Add("Consignment Invoice (Paid) Report");
+            }
+
+
+            parDateFrom.Values.Add(dtp_PaidDateFrom.Value.Date.ToString());
+            parDateTo.Values.Add(dtp_PaidDateTo.Value.Date.ToString());
+
+            if (rdo_Cash.Checked == true)
+            {
+                parIsCash.Values.Add("true");
+            }
+            else
+            {
+                parIsCash.Values.Add("false");
+            }
+
+            if (rdo_Credit.Checked == true)
+            {
+                parIsCredit.Values.Add("true");
+            }
+            else
+            {
+                parIsCredit.Values.Add("false");
+            }
+
+            if (rdo_Consignment.Checked == true)
+            {
+                parIsConsignment.Values.Add("true");
+            }
+            else
+            {
+                parIsConsignment.Values.Add("false");
+            }
+
+            try
+            {
+                parCashier.Values.Add(Convert.ToString(cbx_Cashier.SelectedItem.Col1));
+            }
+            catch (Exception ex)
+            {
+                parCashier.Values.Add("");
+            }
+
+            try
+            {
+                parCustomer.Values.Add(Convert.ToString(cbx_Customer.SelectedItem.Col1));
+            }
+            catch (Exception ex)
+            {
+                parCustomer.Values.Add("");
+            }
+
+            if (user == string.Empty)
+            {
+                parIsCashier.Values.Add("false");
+            }
+            else
+            {
+                parIsCashier.Values.Add("true");
+            }
+
+            if (customer == string.Empty)
+            {
+                parIsCustomer.Values.Add("false");
+            }
+            else
+            {
+                parIsCustomer.Values.Add("true");
+            }
+
+            rptv_InvoicePaidReport.LocalReport.SetParameters(new ReportParameter[] { parCashier, parIsCashier, parDateFrom, parDateTo, parIsCash, parIsCredit, parIsConsignment, parSaleReportType, parIsCustomer, parCustomer });
+
+            localReport.DataSources.Add(ds_InvoiceSale);
+
+            rptv_InvoicePaidReport.RefreshReport();
+        }
+
+        private void rdo_Customer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdo_Customer.Checked)
+            {
+                lbl_Customer.Visible = true;
+                cbx_Customer.Visible = true;
+                lbl_CustomerGroup.Visible = false;
+                cbx_CustomerGroup.Visible = false;
+
+            }
+            else
+            {
+                lbl_Customer.Visible = false;
+                cbx_Customer.Visible = false;
+                lbl_CustomerGroup.Visible = true;
+                cbx_CustomerGroup.Visible = true;
+
+            }
         }
     }
 }

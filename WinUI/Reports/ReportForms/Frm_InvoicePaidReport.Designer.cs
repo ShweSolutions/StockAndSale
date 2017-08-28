@@ -47,7 +47,7 @@
             this.dtp_PaidDateFrom = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.cbx_Customer = new MTGCComboBox();
-            this.rptv_InvoiceSaleReport = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.rptv_InvoicePaidReport = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Search)).BeginInit();
@@ -143,6 +143,7 @@
             this.rdo_Customer.TabStop = true;
             this.rdo_Customer.Text = "By Customer";
             this.rdo_Customer.UseVisualStyleBackColor = true;
+            this.rdo_Customer.CheckedChanged += new System.EventHandler(this.rdo_Customer_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -245,7 +246,7 @@
             // 
             // btn_Search
             // 
-            this.btn_Search.DirtyPaletteCounter = 819;
+            this.btn_Search.DirtyPaletteCounter = 821;
             this.btn_Search.Location = new System.Drawing.Point(420, 123);
             this.btn_Search.Margin = new System.Windows.Forms.Padding(3, 11, 3, 11);
             this.btn_Search.Name = "btn_Search";
@@ -350,13 +351,13 @@
             this.cbx_Customer.Size = new System.Drawing.Size(187, 22);
             this.cbx_Customer.TabIndex = 521;
             // 
-            // rptv_InvoiceSaleReport
+            // rptv_InvoicePaidReport
             // 
-            this.rptv_InvoiceSaleReport.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rptv_InvoiceSaleReport.Location = new System.Drawing.Point(0, 167);
-            this.rptv_InvoiceSaleReport.Name = "rptv_InvoiceSaleReport";
-            this.rptv_InvoiceSaleReport.Size = new System.Drawing.Size(1022, 554);
-            this.rptv_InvoiceSaleReport.TabIndex = 2;
+            this.rptv_InvoicePaidReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rptv_InvoicePaidReport.Location = new System.Drawing.Point(0, 167);
+            this.rptv_InvoicePaidReport.Name = "rptv_InvoicePaidReport";
+            this.rptv_InvoicePaidReport.Size = new System.Drawing.Size(1022, 554);
+            this.rptv_InvoicePaidReport.TabIndex = 2;
             // 
             // Frm_InvoicePaidReport
             // 
@@ -364,7 +365,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1022, 721);
-            this.Controls.Add(this.rptv_InvoiceSaleReport);
+            this.Controls.Add(this.rptv_InvoicePaidReport);
             this.Controls.Add(this.groupBox1);
             this.Name = "Frm_InvoicePaidReport";
             this.Text = "Invoice Paid Report";
@@ -397,7 +398,7 @@
         private System.Windows.Forms.DateTimePicker dtp_PaidDateFrom;
         private System.Windows.Forms.Label label1;
         private MTGCComboBox cbx_Customer;
-        private Microsoft.Reporting.WinForms.ReportViewer rptv_InvoiceSaleReport;
+        private Microsoft.Reporting.WinForms.ReportViewer rptv_InvoicePaidReport;
 
     }
 }

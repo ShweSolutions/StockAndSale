@@ -206,6 +206,7 @@
     <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CustomerReturnWithoutInvoiceNoRepot.rdlc" />
     <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_CustomerSaleRpt.rdlc" />
     <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_FOCReport.rdlc" />
+    <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_InvoicePaidReport.rdlc" />
     <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_InvoiceSaleReport.rdlc" />
     <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_ProductInvoiceReport.rdlc" />
     <EmbeddedResource Include="WinUI\Reports\Classes\Rpt_ProductReturnSummaryReport.rdlc" />
