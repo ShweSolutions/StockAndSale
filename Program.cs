@@ -14,6 +14,7 @@ namespace StockAndSale
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+       /// This is Testing Comment to commit to Git
         [STAThread]
         static void Main()
         {
